@@ -1,0 +1,9 @@
+$thema-color: rgb(255, 156, 43);
+$main-color: rgb(25, 23, 143);
+$colors: (main:rgb(128, 16, 2), secondary: $thema-color);
+$light-color: lighten(map-get($colors, main), 15%);
+
+$border-default: 0.05rem solid $main-color;
+
+$size-default: 2rem;
+$size-tiny: $size-default * 0.7;

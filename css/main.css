@@ -1,0 +1,89 @@
+.rozszerzenie, body .partOne h1, body .partOne h2, body .partOne h3, body .partOne .lighten {
+  text-decoration: underline;
+  border-top: 2px solid black; }
+
+body {
+  background-color: #ff9c2b;
+  padding: 2%; }
+  body .partOne {
+    background-color: pink;
+    margin-bottom: 5rem; }
+    body .partOne h1 {
+      display: -webkit-box;
+      display: -ms-grid;
+      display: -webkit-flex;
+      display: flex;
+      border: 0.05rem solid #19178f; }
+    body .partOne h2 {
+      color: #ff9c2b;
+      margin-left: 2rem; }
+    body .partOne h3 {
+      color: #801002;
+      margin-left: 4rem;
+      border: 0.05rem solid #19178f; }
+    body .partOne p {
+      color: #19178f;
+      font-size: 2rem;
+      box-shadow: 0 1.4rem 1.4rem #ff9c2b; }
+    body .partOne .lighten {
+      font-size: 1.4rem;
+      color: #cb1903; }
+  body .partTwo {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 15rem);
+    justify-content: center;
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(8rem, auto);
+    grid-auto-flow: row;
+    grid-auto-columns: 1rem; }
+    body .partTwo .quote {
+      border: 1px solid #fa923f;
+      background: #ffbd87;
+      font-family: sans-serif;
+      padding: 1rem;
+      border-radius: 5px;
+      grid-column: span 2; }
+      body .partTwo .quote:hover {
+        color: white;
+        background-color: #ff9c2b;
+        border-color: white; }
+    body .partTwo .quote--featured {
+      border: #ff4213;
+      background: #ff9f87;
+      grid-column: span 2; }
+      body .partTwo .quote--featured:hover {
+        color: red;
+        background-color: white;
+        border-color: red; }
+  body .partThree {
+    margin: 20px;
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 10px;
+    grid-template-areas: "header1 header1 header2 header2"  "main1 main1 main1 main" "footer footer footer footer"; }
+    body .partThree .el1 {
+      background: rgba(255, 154, 72, 0.5);
+      grid-area: header1;
+      border: 0.05rem solid #19178f; }
+    body .partThree .el2 {
+      background: rgba(255, 0, 0, 0.5);
+      z-index: 10;
+      grid-area: header2;
+      border: 0.05rem solid #19178f; }
+    body .partThree .el3 {
+      background: rgba(0, 128, 0, 0.5);
+      grid-area: main1; }
+    body .partThree .el4 {
+      background: #801002;
+      grid-area: main; }
+    body .partThree .el5 {
+      background: rgba(0, 4, 255, 0.5);
+      height: 100%;
+      grid-area: footer; }
+
+@media (max-width: 40rem) {
+  html {
+    font-size: 125%;
+    color: white; } }
